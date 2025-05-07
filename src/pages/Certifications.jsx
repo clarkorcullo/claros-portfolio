@@ -4,6 +4,41 @@ import React from "react";
 export default function Certifications() {
   const certifications = [
     {
+      id: 1,
+      title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
+      issuer: "Amazon Web Services (AWS)",
+      date: "March 2024",
+      credentialId: "6232e689-bc19-49ac-badb-8c6675817aa6",
+      verifyUrl: "https://www.credly.com/badges/6232e689-bc19-49ac-badb-8c6675817aa6",
+      image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+      description: "Successfully completed the AWS Academy Cloud Foundations course, demonstrating foundational knowledge of AWS Cloud concepts, services, security, architecture, pricing, and support.",
+      skills: [
+        "AWS Cloud Concepts",
+        "Cloud Security",
+        "Cloud Architecture",
+        "AWS Services",
+        "Cloud Pricing",
+        "Cloud Support"
+      ]
+    },
+    {
+      id: 2,
+      title: "Introduction to Cybersecurity",
+      issuer: "Cisco Networking Academy",
+      date: "March 2024",
+      credentialId: "ecc1b8d8-c61a-4082-bde8-957dbd1cfd49",
+      verifyUrl: "https://www.credly.com/badges/ecc1b8d8-c61a-4082-bde8-957dbd1cfd49",
+      image: "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg",
+      description: "Successfully completed the Introduction to Cybersecurity course. The holder of this student-level credential has introductory knowledge of cybersecurity, including the global implications of cyber threats on industries, and why cybersecurity is a growing profession. They understand vulnerabilities and threat detection and defense. They also have insight into opportunities available with pursuing cybersecurity certifications.",
+      skills: [
+        "Cyber Best Practices",
+        "Cybersecurity Fundamentals",
+        "Network Vulnerabilities",
+        "Privacy and Data Confidentiality",
+        "Threat Detection"
+      ]
+    },
+    {
       title: "CompTIA Security+",
       issuer: "CompTIA",
       date: "2023",
@@ -128,17 +163,21 @@ export default function Certifications() {
                   </div>
                   
                   <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-500 dark:text-gray-400">
-                      Credential ID: {cert.credentialId}
-                    </span>
-                    <a
-                      href={`https://verify.credential.net/${cert.credentialId}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      Verify Certificate
-                    </a>
+                    {cert.credentialId && (
+                      <>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                          Credential ID: {cert.credentialId}
+                        </span>
+                        <a
+                          href={cert.verifyUrl || `https://verify.credential.net/${cert.credentialId}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:underline"
+                        >
+                          View Badge
+                        </a>
+                      </>
+                    )}
                   </div>
                 </div>
               </motion.div>

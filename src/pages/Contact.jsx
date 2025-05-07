@@ -54,14 +54,14 @@ export default function Contact() {
   };
 
   const contactInfo = {
-    email: "your.email@example.com",
-    phone: "(555) 123-4567",
-    location: "City, State",
+    email: "orculloclark@yahoo.com",
+    phone: "09506332965",
+    location: "Novaliches Quezon City Philippines 1117",
     availability: "Available for freelance and full-time opportunities",
     social: {
-      linkedin: "https://linkedin.com/in/yourprofile",
-      github: "https://github.com/yourusername",
-      twitter: "https://twitter.com/yourusername",
+      github: "https://github.com/clarkorcullo",
+      facebook: "https://www.facebook.com/orculloclark/",
+      credly: "https://www.credly.com/users/clarosorcullo"
     },
   };
 
@@ -263,14 +263,6 @@ export default function Contact() {
                   </p>
                   <div className="flex space-x-4">
                     <a
-                      href={contactInfo.social.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      LinkedIn
-                    </a>
-                    <a
                       href={contactInfo.social.github}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -279,12 +271,20 @@ export default function Contact() {
                       GitHub
                     </a>
                     <a
-                      href={contactInfo.social.twitter}
+                      href={contactInfo.social.facebook}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 dark:text-blue-400 hover:underline"
                     >
-                      Twitter
+                      Facebook
+                    </a>
+                    <a
+                      href={contactInfo.social.credly}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      Credly
                     </a>
                   </div>
                 </div>

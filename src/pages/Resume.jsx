@@ -63,16 +63,18 @@ export default function Resume() {
 
   const education = [
     {
-      degree: "Master of Science in Cybersecurity",
-      school: "University of Technology",
-      year: "2020",
-      details: "Specialized in Network Security and Digital Forensics"
+      degree: "Bachelor of Science in Information Technology",
+      school: "Mapua Malayan Digital College under Mapua Malayan Colleges Laguna",
+      year: "2022 - 2026",
+      details: "Major in Network & Cybersecurity",
+      link: "https://www.mmdc.mcl.edu.ph/"
     },
     {
-      degree: "Bachelor of Science in Computer Science",
-      school: "State University",
-      year: "2018",
-      details: "Minor in Information Security"
+      degree: "Vocational Course in Computer Secretarial",
+      school: "Holy Child Colleges of Butuan",
+      year: "2006 - 2008",
+      details: "Completed vocational training in computer secretarial skills",
+      link: "https://hccb.edu.ph/"
     }
   ];
 
@@ -216,8 +218,16 @@ export default function Resume() {
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
                         {edu.degree}
                       </h3>
+                      <a 
+                        href={edu.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 hover:underline"
+                      >
+                        {edu.school}
+                      </a>
                       <p className="text-gray-600 dark:text-gray-300">
-                        {edu.school} • {edu.year}
+                        {edu.year}
                       </p>
                       <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">
                         {edu.details}
