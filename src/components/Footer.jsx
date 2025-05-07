@@ -30,18 +30,18 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-gray-600 dark:text-gray-300">
-                Email: claros.orcullo@example.com
+                Email: orculloclark@yahoo.com
               </li>
               <li className="text-gray-600 dark:text-gray-300">
-                Location: Your Location
+                Phone: 09506332965
               </li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Connect</h3>
-            <div className="flex space-x-4">
+            <div className="flex flex-col space-y-2">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/clarkorcullo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-500"
@@ -49,20 +49,20 @@ export default function Footer() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.facebook.com/orculloclark/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-500"
               >
-                LinkedIn
+                Facebook
               </a>
               <a
-                href="https://twitter.com/yourusername"
+                href="https://www.credly.com/users/clarosorcullo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-500"
               >
-                Twitter
+                Credly
               </a>
             </div>
           </div>

@@ -88,15 +88,25 @@ export default function Resume() {
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
               Resume
             </h1>
-            <a
-              href={process.env.PUBLIC_URL + "/resume.pdf"}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
-              download="Claros_Orcullo_Resume.pdf"
-            >
-              Download PDF
-            </a>
+            <div className="flex space-x-4">
+              <a
+                href={process.env.PUBLIC_URL + "/resume.pdf"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+              >
+                View Resume
+              </a>
+              <a
+                href={process.env.PUBLIC_URL + "/resume.pdf"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white rounded-md hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+                download="Claros_Orcullo_Resume.pdf"
+              >
+                Download PDF
+              </a>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -109,32 +119,37 @@ export default function Resume() {
                 <div className="space-y-3">
                   <p className="text-gray-600 dark:text-gray-300">
                     <span className="font-semibold">Email:</span>{" "}
-                    <a href="mailto:your.email@example.com" className="text-blue-600 dark:text-blue-400 hover:underline">
-                      your.email@example.com
+                    <a href="mailto:orculloclark@yahoo.com" className="text-blue-600 dark:text-blue-400 hover:underline">
+                      orculloclark@yahoo.com
                     </a>
                   </p>
                   <p className="text-gray-600 dark:text-gray-300">
-                    <span className="font-semibold">Phone:</span> (555) 123-4567
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    <span className="font-semibold">Location:</span> City, State
+                    <span className="font-semibold">Phone:</span> 09506332965
                   </p>
                   <div className="flex space-x-4 mt-4">
                     <a
-                      href="https://linkedin.com/in/yourprofile"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      LinkedIn
-                    </a>
-                    <a
-                      href="https://github.com/yourusername"
+                      href="https://github.com/clarkorcullo"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 dark:text-blue-400 hover:underline"
                     >
                       GitHub
+                    </a>
+                    <a
+                      href="https://www.facebook.com/orculloclark/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      Facebook
+                    </a>
+                    <a
+                      href="https://www.credly.com/users/clarosorcullo"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 dark:text-blue-400 hover:underline"
+                    >
+                      Credly
                     </a>
                   </div>
                 </div>
