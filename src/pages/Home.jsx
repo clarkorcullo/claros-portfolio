@@ -11,9 +11,9 @@ export default function Home() {
         className="text-center"
       >
         <motion.img
-          src="/profile.jpg"
+          src={process.env.PUBLIC_URL + "/profile.jpg"}
           alt="Claros C. Orcullo"
-          className="w-48 h-48 rounded-full shadow-xl mb-8 mx-auto border-4 border-blue-500"
+          className="w-48 h-48 rounded-full shadow-xl mb-8 mx-auto border-4 border-blue-500 object-cover"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}

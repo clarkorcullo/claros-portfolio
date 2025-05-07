@@ -89,10 +89,11 @@ export default function Resume() {
               Resume
             </h1>
             <a
-              href="/resume/resume.pdf"
+              href={process.env.PUBLIC_URL + "/resume.pdf"}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+              download="Claros_Orcullo_Resume.pdf"
             >
               Download PDF
             </a>

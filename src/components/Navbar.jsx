@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(() => {
+    // Check if dark mode was previously enabled
+    return localStorage.getItem('darkMode') === 'true';
+  });
+
+  useEffect(() => {
+    // Update localStorage when dark mode changes
+    localStorage.setItem('darkMode', isDark);
+    // Toggle dark class on document
+    if (isDark) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [isDark]);
 
   const toggleDarkMode = () => {
     setIsDark(!isDark);
-    document.documentElement.classList.toggle('dark');
   };
 
   return (
