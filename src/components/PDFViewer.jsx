@@ -16,12 +16,23 @@ export default function PDFViewer({ isOpen, onClose, pdfUrl }) {
           </button>
         </div>
         <div className="flex-grow p-4">
-          <iframe
-            src={`${pdfUrl}#toolbar=0`}
-            className="w-full h-full"
-            title="PDF Viewer"
-            frameBorder="0"
-          />
+          <div className="w-full h-full flex flex-col items-center justify-center">
+            <iframe
+              src={`${pdfUrl}#toolbar=0`}
+              className="w-full h-full border-0"
+              title="PDF Viewer"
+            />
+            <div className="mt-4 text-center">
+              <a
+                href={pdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                Open PDF in new tab
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
