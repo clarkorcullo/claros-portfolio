@@ -22,15 +22,16 @@ export default function Home() {
             className="relative"
           >
             <div className="absolute inset-0 bg-blue-500 rounded-full blur-xl opacity-30 animate-pulse"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-xl opacity-20 animate-pulse"></div>
             <img
               src={process.env.PUBLIC_URL + "/profile.jpg"}
               alt="Claros C. Orcullo"
-              className="relative w-48 h-48 rounded-full shadow-xl mb-8 mx-auto border-4 border-blue-500 object-cover"
+              className="relative w-48 h-48 rounded-full shadow-xl mb-8 mx-auto border-4 border-blue-500 object-cover hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
 
           <motion.h1
-            className="text-5xl font-bold text-white mb-4"
+            className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 dark:from-blue-300 dark:to-purple-300"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -39,16 +40,16 @@ export default function Home() {
           </motion.h1>
 
           <motion.p
-            className="text-xl text-blue-200 mb-6"
+            className="text-xl mb-6 text-gray-800 dark:text-blue-200 font-semibold"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            IT Major in Network & CyberSecurity | Developer of Python Security Tools
+            Network & CyberSecurity 
           </motion.p>
 
           <motion.p
-            className="max-w-2xl mx-auto text-gray-300 mb-8"
+            className="max-w-2xl mx-auto mb-8 text-gray-700 dark:text-gray-300 leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
@@ -67,10 +68,12 @@ export default function Home() {
             {["Cybersecurity", "Network Security", "Python", "Penetration Testing"].map((skill, index) => (
               <motion.span
                 key={skill}
-                className="px-4 py-2 bg-blue-500/20 text-blue-200 rounded-full border border-blue-500/30"
+                className="px-4 py-2 bg-blue-500/20 text-gray-800 dark:text-blue-200 rounded-full border border-blue-500/30 hover:bg-blue-500/30 transition-colors cursor-default"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 {skill}
               </motion.span>
@@ -84,18 +87,22 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.2 }}
           >
-            <a
+            <motion.a
               href="/projects"
-              className="px-6 py-3 bg-blue-500/20 text-blue-200 rounded-lg border border-blue-500/30 hover:bg-blue-500/30 transition-colors"
+              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               View Projects
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="/contact"
-              className="px-6 py-3 bg-blue-500/20 text-blue-200 rounded-lg border border-blue-500/30 hover:bg-blue-500/30 transition-colors"
+              className="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               Contact Me
-            </a>
+            </motion.a>
           </motion.div>
         </motion.div>
       </div>
