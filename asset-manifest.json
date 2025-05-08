@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/claros-portfolio/static/css/main.e11ed7bf.css",
-    "main.js": "/claros-portfolio/static/js/main.4b9469e4.js",
+    "main.css": "/claros-portfolio/static/css/main.e29a777d.css",
+    "main.js": "/claros-portfolio/static/js/main.c17f9a89.js",
     "static/js/453.de8591c0.chunk.js": "/claros-portfolio/static/js/453.de8591c0.chunk.js",
     "index.html": "/claros-portfolio/index.html",
-    "main.e11ed7bf.css.map": "/claros-portfolio/static/css/main.e11ed7bf.css.map",
-    "main.4b9469e4.js.map": "/claros-portfolio/static/js/main.4b9469e4.js.map",
+    "main.e29a777d.css.map": "/claros-portfolio/static/css/main.e29a777d.css.map",
+    "main.c17f9a89.js.map": "/claros-portfolio/static/js/main.c17f9a89.js.map",
     "453.de8591c0.chunk.js.map": "/claros-portfolio/static/js/453.de8591c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e11ed7bf.css",
-    "static/js/main.4b9469e4.js"
+    "static/css/main.e29a777d.css",
+    "static/js/main.c17f9a89.js"
   ]
 }
