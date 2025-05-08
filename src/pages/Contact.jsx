@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import SocialLinks from "../components/SocialLinks";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -201,7 +202,7 @@ export default function Contact() {
                     </svg>
                     <a
                       href={`mailto:${contactInfo.email}`}
-                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                      className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
                     >
                       {contactInfo.email}
                     </a>
@@ -221,7 +222,7 @@ export default function Contact() {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
-                    <span className="text-gray-600 dark:text-gray-300">
+                    <span className="text-blue-600 dark:text-blue-400">
                       {contactInfo.phone}
                     </span>
                   </div>
@@ -246,7 +247,7 @@ export default function Contact() {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    <span className="text-gray-600 dark:text-gray-300">
+                    <span className="text-blue-600 dark:text-blue-400">
                       {contactInfo.location}
                     </span>
                   </div>
@@ -261,32 +262,7 @@ export default function Contact() {
                   <p className="text-gray-600 dark:text-gray-300">
                     {contactInfo.availability}
                   </p>
-                  <div className="flex space-x-4">
-                    <a
-                      href={contactInfo.social.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      GitHub
-                    </a>
-                    <a
-                      href={contactInfo.social.facebook}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      Facebook
-                    </a>
-                    <a
-                      href={contactInfo.social.credly}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline"
-                    >
-                      Credly
-                    </a>
-                  </div>
+                  <SocialLinks />
                 </div>
               </div>
             </div>

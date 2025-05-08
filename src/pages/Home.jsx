@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
+import { Link } from "react-router-dom";
 import CyberBackground from "../components/CyberBackground";
 
 export default function Home() {
@@ -87,22 +88,28 @@ export default function Home() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.2 }}
           >
-            <motion.a
-              href="/projects"
-              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              View Projects
-            </motion.a>
-            <motion.a
-              href="/contact"
-              className="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              <Link
+                to="/projects"
+                className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                View Projects
+              </Link>
+            </motion.div>
+            <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Contact Me
-            </motion.a>
+              <Link
+                to="/contact"
+                className="px-6 py-3 bg-gradient-to-r from-purple-500 to-blue-500 text-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                Contact Me
+              </Link>
+            </motion.div>
           </motion.div>
         </motion.div>
       </div>

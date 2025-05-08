@@ -25,12 +25,19 @@ export default function Navbar() {
   return (
     <nav className="bg-white dark:bg-gray-900 shadow-lg p-4 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-gray-900 dark:text-white">
-          Claros
+        <Link to="/home" className="flex items-center space-x-2">
+          <img
+            src={process.env.PUBLIC_URL + "/profile.jpg"}
+            alt="CCO"
+            className="w-8 h-8 rounded-full border-2 border-blue-500 object-cover"
+          />
+          <span className="text-2xl font-bold text-gray-900 dark:text-white">
+            CCO
+          </span>
         </Link>
         <div className="flex items-center space-x-6">
           <div className="hidden md:flex space-x-6">
-            <Link to="/" className="text-gray-800 dark:text-gray-200 hover:text-blue-500 transition-colors">
+            <Link to="/home" className="text-gray-800 dark:text-gray-200 hover:text-blue-500 transition-colors">
               Home
             </Link>
             <Link to="/about" className="text-gray-800 dark:text-gray-200 hover:text-blue-500 transition-colors">
